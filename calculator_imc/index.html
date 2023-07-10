@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule seu IMC</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="module" defer src="./js/main.js"></script>
+  </head>
+  <body>
+                  <!-- programmed by sidflex -->
+    <div class="alert-error">
+     Digite somente números
+    </div>
+
+    <div class="container">
+      <main class="card">
+        <form>
+          <h1 class="title">Cálculo de IMC</h1>
+
+          <div class="input-whapper">
+            <label for="weight">Peso (kg)</label>
+            <input class="InputConf" id="weight" type="text" placeholder="70"/>
+          </div>
+
+          <div class="input-whapper">
+            <label for="height">Altura (m)</label>
+            <input class="InputConf" id="height" type="text" placeholder="185"/>
+          </div>
+ 
+          <button type="submit">
+            Calcular IMC 
+            <img src="/assets/arrow.svg" alt="seta apontando para direita">
+          </button> 
+        </form>
+      </main>
+    </div>
+
+    <form>
+    <div class="modal-whapper ">
+      <div class="modal card">
+
+        <h2 class="title">
+          <span class="IMC ">Seu IMC é de ?</span>
+          <button class="close">
+            <img src="/assets/close.svg" alt="imagem para fechar popup">
+          </button>
+        </h2>
+        <h3 class = "onText open">
+          [Abaixo do peso (00 IMC)]
+        </h3> 
+       
+      </div>
+    </div>
+  </form>
+<!-- 
+hj eu 09/07 02:22 eu fiz uma legenda com a classificacao 
+de acordo com a tabela de classificação de IMC
+     -->
+   
+  </body>
+</html>
+
